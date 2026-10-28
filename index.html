@@ -976,7 +976,7 @@ submitBtn.addEventListener('click', function () {
       // 捲回場次選擇
       sessionCards.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else if (data.duplicate) {
-      showToast('您已經報名過茶敘囉！每人限報一場，期待與您相見。');
+      showToast('您已報名過這個場次，請改選其他場次。');
       showStatus(statusMsg2, '', '', 0);
       submitBtn.disabled = false;
     } else if (data.closed) {
